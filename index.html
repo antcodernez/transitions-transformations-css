@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases</title>
+    <style>
+        a
+            {
+                color: #1ABC9C ;
+                font-size: 30px;
+            }
+         a:link /*Enlaces que no han sido vicitados */
+            {
+                color:  #8E44AD;
+            }
+        a:visited /* Enlaces a los que se le dio click */
+            {
+                /* color: #7B241C ; */
+            }
+        a:hover
+            {
+                transition-duration: 0.7s;
+                color: rebeccapurple;
+                background-color: #8E44AD;
+            }
+        p:not(.marihuana) /* seleccionara una etiqueta mientras no tenga la clase marihuna */
+            {
+                color: aquamarine;
+            }
+        .container div:nth-child(2)
+            {
+                background-color: blueviolet;
+            }
+        button
+            {
+                background-color: #1ABC9C;
+            }
+        button:active
+            {
+                background-color: aqua;
+            }
+        input:focus
+            {
+                box-shadow: 1px 4px 6px 5px black;
+            }
+    </style>
+</head>
+<body>    
+    <a href="/">Algo</a>
+    <a href="./pseudo-elements.html">Pseudoelementos</a>
+    <p>En el pais de las drogras</p>
+    <p class="marihuana">Compré mucha marihuana XD</p>
+    <div class="container">
+        <div>Cocaína</div>
+        <div>Marihuana</div>
+        <div>LSD</div>
+    </div>
+    <button>Example active</button>
+    <input type="email" name="" id="">
+</body>
+</html>
