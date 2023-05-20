@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scale</title>
+    <style>
+        .circle
+            {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background-image: linear-gradient(to top, red, blue);   
+            }
+        .circle:hover
+            {
+                transition-duration: 5s;
+                transform: scale(1.5, 0.5) translate(400px, 400px);
+            }
+        .circuloSkew
+            {
+                margin: 0 auto;
+                width: 100px;
+                height: 100px;
+                border-radius: 20%;
+                background-image: linear-gradient(green, red);
+            }
+        .circuloSkew:hover
+            {
+                transform: skew(45deg);
+                /* usan grados */
+            }
+        .cuadrado
+            {
+                width: 100px;
+                height: 100px;
+                background-image: linear-gradient(purple, pink);
+            }
+        .cuadrado:hover
+            {
+                transform: rotate(20deg); /* usan grados */
+            }
+    </style>
+</head>
+<body>
+    <div class="circle">
+
+    </div>
+    <div class="circuloSkew">
+
+    </div>
+
+    <div class="cuadrado">
+
+    </div>
+</body>
+</html>

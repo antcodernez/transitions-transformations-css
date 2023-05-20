@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backface</title>
+    <style>
+        .daddy
+            {
+                width: 400px;
+                height: 350px;
+                transform-style: preserve-3d;
+                position: relative;
+            }
+        .daddy:hover
+            {
+                transform: rotateY(180deg);
+                transition-duration: 2s;
+            }
+        .face
+            {
+                position: absolute;
+                width: 400px;
+                height: 350px;
+                backface-visibility: hidden;
+            }
+        .front
+            {
+                background-image: linear-gradient(red 40%, blue);
+            }
+        .back
+            {
+                background-image: linear-gradient(purple 60%, green);
+                transform: rotateX(180deg);
+            }
+    </style>
+</head>
+<body>
+    <div class="daddy">
+        <div class="front face"></div>
+        <div class="back face"></div>
+    </div>
+</body>
+</html>
