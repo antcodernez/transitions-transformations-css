@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempos de espera</title>
+    <style>
+        *   {
+                padding: 0;
+            }
+        ul
+            {
+                list-style: none;
+            }
+        a
+            {
+                text-decoration: none;
+            }
+        .nav    
+            {
+                gap: 30px;
+                display: flex;
+            }
+        .nav li:hover > ul  
+            {
+                transition-duration: 0.5s;
+                opacity: 1;
+                margin-left: 10px;
+                padding: 20px 15px;
+            }
+        .nav li ul
+            {
+                display: block;
+                opacity: 0;
+                position: absolute;
+                transition: opacity 1s;/* Cada que haya un opacity voy a darle un delay y una duracion */
+                transition-delay: 300ms;
+            }
+        .nav li ul li   
+            {
+                position: relative;
+            }
+        .nav li ul li   
+            {
+                right: -10px;
+            }
+            
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li>
+            <a href="">Hombre</a>
+            <ul>
+                <li>
+                    <a href="">Playeras</a>
+                    <ul>
+                        <li>Polo</li>
+                        <li>Del PRI</li>
+                        <li>Cholos</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Pantalones</a>
+                </li>
+                <li>
+                    <a href="">Shorts</a>
+                    <ul>
+                        <li>
+                            <a href="">Cholos</a></li>
+                        <li>
+                            <a href="">Largos</a>
+                        </li>
+                        <li>
+                            <a href="">Tangas</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="">Mujer</a>
+            <ul>
+                <li>
+                    <a href="">Playeras</a>
+                </li>
+                <li>
+                    <a href="">Pantalones</a>
+                </li>
+                <li>
+                    <a href="">Shorts</a>
+                    <ul>
+                        <li>
+                            <a href="">Cholos</a></li>
+                        <li>
+                            <a href="">Largos</a>
+                        </li>
+                        <li>
+                            <a href="">Tangas</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="">Niños</a>
+            <ul>
+                <li>
+                    <a href="">Playeras</a>
+                </li>
+                <li>
+                    <a href="">Pantalones</a>
+                </li>
+                <li>
+                    <a href="">Shorts</a>
+                    <ul>
+                        <li>
+                            <a href="">Cholos</a></li>
+                        <li>
+                            <a href="">Largos</a>
+                        </li>
+                        <li>
+                            <a href="">Tangas</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
