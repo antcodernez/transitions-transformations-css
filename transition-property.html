@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition-property y duration</title>
+    <style>
+        .container
+            {
+                margin: 0 auto;
+                width: 900px;
+                height: 400px;
+                background-color: steelblue; 
+                display: flex;
+                gap: 20px;
+                justify-content: space-evenly;
+                align-items: center;   
+            }
+        .container:hover .box
+            {
+                transform: scale(1.4);
+            }
+        .box
+            {
+                width: 200px;
+                height: 200px;
+                background-position: center;
+                background-size: cover;
+                cursor: pointer;
+            }
+        .uno
+            {
+                background: linear-gradient(118deg, rgba(210,50,174,1) 0%, rgba(54,54,161,1) 51%, rgba(0,212,255,1) 100%);
+                transition: transform 1s;
+            }
+        .dos
+            {
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/70/Quetzal01.jpg");
+                transition: transform 2s;
+            }
+        .tres
+            {
+                background-image: url("https://www.gob.mx/cms/uploads/image/file/520212/Loro_cabeza_amarilla.jpg");
+                transition: transform 5s;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box uno"></div>
+        <div class="box dos"></div>
+        <div class="box tres"></div>  
+    </div>
+</body>
+</html>
